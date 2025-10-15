@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>MP Viagens / MPEX | Passagens Intermunicipais & Encomendas Expressas no Pará</title>
+  <meta name="description" content="Compre passagens intermunicipais e envie encomendas expressas com a MP Viagens / MPEX. Segurança, conforto e agilidade entre as principais cidades do Pará. Fale no WhatsApp: (91) 98503-1240." />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://www.seudominio.com.br/" />
+  <meta name="theme-color" content="#0b2a6b" />
+  <meta name="application-name" content="MP Viagens / MPEX" />
+  <meta name="author" content="MP Viagens / MPEX" />
+  <meta name="geo.region" content="BR-PA" />
+  <meta name="geo.placename" content="Pará" />
+
+  <!-- Preconnects & Preloads -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/onibus-hero.jpg" imagesrcset="assets/onibus-hero.jpg 1200w" imagesizes="100vw" fetchpriority="high" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MP Viagens / MPEX – Passagens e Encomendas Expressas no Pará" />
+  <meta property="og:description" content="Transporte intermunicipal e encomendas com segurança, conforto e agilidade. Cidades atendidas no Pará e reserva pelo WhatsApp." />
+  <meta property="og:url" content="https://www.seudominio.com.br/" />
+  <meta property="og:site_name" content="MP Viagens / MPEX" />
+  <meta property="og:image" content="assets/og-cover.jpg" />
+  <meta property="og:image:alt" content="Ônibus da MP Viagens / MPEX em rota" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MP Viagens / MPEX – Passagens e Encomendas no Pará" />
+  <meta name="twitter:description" content="Compre passagens e envie encomendas expressas. Atendimento no WhatsApp (91) 98503-1240." />
+  <meta name="twitter:image" content="assets/og-cover.jpg" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" href="https://www.seudominio.com.br/" hreflang="pt-BR" />
+  <link rel="alternate" href="https://www.seudominio.com.br/" hreflang="x-default" />
+
+  <style>
+    /* =====================
+       Base & Tokens (SEO-friendly performance)
+    ====================== */
+    :root {
+      --yellow: #ffd54d;
+      --yellow-strong: #ffca1a;
+      --blue: #0b2a6b;
+      --blue-600: #0a2a6e;
+      --white: #ffffff;
+      --green: #25D366;
+      --text: #0f172a;
+      --muted: #334155;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,.12);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--text); background: var(--yellow); line-height: 1.6; }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1180px, 92%); margin: 0 auto; }
+    section { scroll-margin-top: 96px; }
+
+    /* ===================== Header / Navbar ===================== */
+    header { position: sticky; top: 0; z-index: 50; background: rgba(255, 213, 77, .95); backdrop-filter: blur(6px); border-bottom: 1px solid rgba(10, 42, 110, .1); }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo img { height: 40px; width: auto; }
+    .logo-title { font-weight: 700; letter-spacing: .2px; color: 25D366; }
+    .menu { display: flex; align-items: center; gap: 18px; }
+    .menu a { font-weight: 500; ; opacity: .9; }
+    .menu a:hover { opacity: 1; }
+    .cta-whats { background: var(--green); color: var(--white); padding: 10px 16px; border-radius: 999px; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; box-shadow: var(--shadow); }
+    .cta-whats:hover { transform: translateY(-1px); }
+    .hamburger { display: none; background: transparent; border: 0; font-size: 28px; color: var(--blue); }
+    .mobile-menu { display: none; flex-direction: column; gap: 12px; padding: 12px 0 16px; }
+    .mobile-menu a { padding: 8px 0; border-bottom: 1px dashed rgba(10,42,110,.15); }
+
+    /* ===================== Hero ===================== */
+    .hero { position: relative; min-height: 70vh; display: grid; place-items: center; color: var(--white); background: var(--blue); overflow: clip; }
+    .hero::before { content: ""; position: absolute; inset: 0; background: url('assets/onibus-hero.jpg') center/cover no-repeat; opacity: .28; transform: scale(1.03); }
+    .hero .content { position: relative; padding: 96px 0; text-align: center; }
+    .kicker { display: inline-block; background: rgba(255,255,255,.15); padding: 6px 12px; border-radius: 999px; font-size: 14px; }
+    .hero h1 { font-size: clamp(28px, 4vw, 52px); margin: 14px 0 10px; font-weight: 800; letter-spacing: .2px; }
+    .hero p { font-size: clamp(16px, 2vw, 20px); opacity: .95; }
+    .hero .actions { margin-top: 20px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 0; border-radius: 999px; padding: 12px 18px; font-weight: 700; cursor: pointer; text-align: center; transition: transform .2s ease, box-shadow .2s ease; box-shadow: var(--shadow); }
+    .btn-primary { background: var(--yellow); color: #111827; }
+    .btn-primary:hover { transform: translateY(-2px); }
+    .btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,.55); }
+    .btn-outline:hover { border-color: var(--white); transform: translateY(-2px); }
+    .trust-row { margin-top: 26px; font-size: 14px; opacity: .9; }
+
+    /* ===================== Seções ===================== */
+    .section { padding: 72px 0; background: var(--yellow); }
+    .section.white { background: var(--white); }
+    .section.blue { background: var(--blue); color: var(--white); }
+    .section h2 { font-size: clamp(24px, 3vw, 36px); margin: 0 0 14px; color: var(--blue-600); }
+    .section.white h2 { color: var(--blue); }
+    .section p.lead { color: var(--muted); max-width: 760px; }
+
+    /* Cidades */
+    .badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+    .badge { background: var(--white); border: 1px solid rgba(10,42,110,.12); color: var(--blue); padding: 10px 12px; border-radius: 999px; font-weight: 600; box-shadow: 0 6px 16px rgba(0,0,0,.05); }
+    .cities { margin-top: 28px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .city-card { background: var(--white); border: 1px solid rgba(10,42,110,.08); border-radius: var(--radius); padding: 16px; display: flex; align-items: center; gap: 10px; box-shadow: 0 10px 18px rgba(0,0,0,.06); transition: transform .2s ease; }
+    .city-card:hover { transform: translateY(-4px); }
+    .city-icon { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 10px; background: #eff6ff; }
+    @media (max-width: 980px) { .cities { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 680px) { .menu { display: none; } .hamburger { display: block; } .cities { display: grid; grid-auto-flow: column; grid-auto-columns: 85%; overflow-x: auto; gap: 12px; scroll-snap-type: x mandatory; padding-bottom: 6px; } .city-card { scroll-snap-align: start; } }
+
+    /* Horários */
+    .schedules { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 28px; }
+    .card { background: var(--white); border: 1px solid rgba(10,42,110,.08); border-radius: var(--radius); overflow: hidden; box-shadow: 0 14px 28px rgba(0,0,0,.08); display: flex; flex-direction: column; }
+    .card .media { position: relative; }
+    .tag { position: absolute; top: 12px; left: 12px; background: var(--yellow-strong); color: #111827; font-weight: 800; font-size: 12px; padding: 6px 10px; border-radius: 999px; }
+    .card .body { padding: 16px; display: grid; gap: 8px; }
+    .card .body h3 { margin: 0; color: var(--blue); font-size: 20px; }
+    .meta { color: var(--muted); font-size: 14px; }
+    .card .actions { margin-top: 8px; }
+    @media (max-width: 980px) { .schedules { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 680px) { .schedules { grid-template-columns: 1fr; } }
+
+    /* Encomendas */
+    .features { margin-top: 28px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .feature { background: var(--white); border: 1px solid rgba(10,42,110,.08); border-radius: var(--radius); padding: 16px; display: grid; gap: 8px; box-shadow: 0 14px 28px rgba(0,0,0,.08); }
+    .feature .icon { width: 46px; height: 46px; border-radius: 10px; display: grid; place-items: center; background: #eff6ff; }
+    .feature h3 { margin: 0; color: var(--blue); }
+    @media (max-width: 980px) { .features { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 680px) { .features { grid-template-columns: 1fr; } }
+
+    /* Depoimentos */
+    .testimonials { margin-top: 28px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .quote { background: var(--white); border: 1px solid rgba(10,42,110,.08); border-radius: var(--radius); padding: 16px; box-shadow: 0 14px 28px rgba(0,0,0,.06); }
+    .stars { color: #fbbf24; font-size: 18px; letter-spacing: 1px; }
+    .person { margin-top: 8px; color: var(--muted); font-size: 14px; }
+    @media (max-width: 980px) { .testimonials { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 680px) { .testimonials { grid-template-columns: 1fr; } }
+
+    /* CTA Azul */
+    .cta-final { text-align: center; }
+    .cta-final h2 { color: var(--white); }
+    .cta-final p { color: rgba(255,255,255,.9); }
+
+    /* Contato & Footer */
+    .contact { display: grid; grid-template-columns: 1.2fr 1fr; gap: 18px; margin-top: 28px; }
+    .contact .panel { background: var(--white); border: 1px solid rgba(10,42,110,.08); border-radius: var(--radius); padding: 18px; box-shadow: 0 10px 24px rgba(0,0,0,.06); }
+    .contact .list { display: grid; gap: 10px; }
+    .contact .list a { color: var(--blue); font-weight: 600; }
+    @media (max-width: 860px) { .contact { grid-template-columns: 1fr; } }
+    footer { background: #0a2458; color: rgba(255,255,255,.9); padding: 28px 0; }
+    .footer-grid { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 12px; }
+    .footer-links { display: flex; gap: 16px; font-size: 14px; }
+    .footer-links a { color: rgba(255,255,255,.9); text-decoration: underline; }
+
+    /* Acessibilidade & efeitos */
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    .skip-link { position: absolute; left: -999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+    .skip-link:focus { position: static; width: auto; height: auto; padding: 8px; background: #fff; }
+
+    /* FAQ */
+    .faq { margin-top: 28px; display: grid; gap: 12px; }
+    .faq details { background: var(--white); border: 1px solid rgba(10,42,110,.08); border-radius: var(--radius); padding: 14px 16px; }
+    .breadcrumbs { font-size: 14px; color: var(--muted); margin: 8px 0 0; }
+    .breadcrumbs a { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Ir para o conteúdo principal</a>
+
+  <!-- ===================== Header ===================== -->
+  <header id="topo" role="banner">
+    <div class="container nav">
+      <a href="#inicio" class="logo" aria-label="MP Viagens / MPEX">
+        <img src="assets/logo-mpex.png" alt="Logo da MP Viagens / MPEX" width="160" height="40" loading="eager" fetchpriority="high" />
+        <span class="logo-title">MP Viagens / MPEX</span>
+      </a>
+
+      <nav class="menu" aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#rotas">Rotas e Horários</a>
+        <a href="#encomendas">Encomendas</a>
+        <a href="#contato">Contato</a>
+        <a class="cta-whats" href="https://wa.me/5591985031240?text=Ol%C3%A1%20MPEX!%20Quero%20informa%C3%A7%C3%B5es%20sobre%20passagens%20ou%20encomendas." target="_blank" rel="noopener" aria-label="Fale no WhatsApp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.94 11.94 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.54 4.17 1.57 6L0 24l6.2-1.63A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.21-3.48-8.52zM12 22a9.94 9.94 0 0 1-5.07-1.38l-.36-.21-3.62.95.97-3.52-.24-.37A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm5.43-7.2c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.18.2-.35.22-.65.07-.3-.15-1.28-.47-2.44-1.49-.9-.8-1.5-1.79-1.67-2.09-.17-.3-.02-.46.13-.61.13-.13.3-.35.46-.53.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.08-.8.37-.27.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.14 3.26 5.2 4.57.73.32 1.3.5 1.74.64.73.23 1.39.2 1.92.12.59-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/></svg>
+          <span>(91) 98503-1240</span>
+        </a>
+      </nav>
+
+      <button class="hamburger" aria-label="Abrir menu" id="btnMenu">☰</button>
+    </div>
+    <div class="container mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#rotas">Rotas e Horários</a>
+      <a href="#encomendas">Encomendas</a>
+      <a href="#contato">Contato</a>
+      <a class="cta-whats" href="https://wa.me/5591985031240?text=Ol%C3%A1%20MPEX!%20Quero%20informa%C3%A7%C3%B5es%20sobre%20passagens%20ou%20encomendas." target="_blank" rel="noopener">Fale no WhatsApp</a>
+    </div>
+  </header>
+
+  <!-- ===================== Hero ===================== -->
+  <main id="inicio" class="hero" role="main">
+    <div class="container content">
+      <nav class="breadcrumbs" aria-label="Trilha de navegação">
+        <a href="#inicio">Início</a> › <a href="#rotas">Rotas</a> › <span>Pará</span>
+      </nav>
+      <span class="kicker">Segurança • Conforto • Qualidade</span>
+      <h1>Viaje com mais segurança, conforto e pontualidade.</h1>
+      <p>Passagens intermunicipais e encomendas expressas entre as principais cidades do Pará. Atendimento rápido pelo WhatsApp.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://wa.me/5591985031240?text=Ol%C3%A1%20MPEX!%20Quero%20comprar%20passagem." target="_blank" rel="noopener">Fale conosco agora no WhatsApp</a>
+        <a class="btn btn-outline" href="#rotas">Ver rotas e horários</a>
+      </div>
+      <div class="trust-row" aria-live="polite">
+        <strong>Autoridade:</strong> <span id="cityCount">Mais de 0 cidades</span> atendidas no Pará com excelência.
+      </div>
+    </div>
+  </main>
+
+  <!-- ===================== Sobre ===================== -->
+  <section id="sobre" class="section" aria-labelledby="sobre-title">
+    <div class="container reveal">
+      <h2 id="sobre-title">Sobre a MP Viagens / MPEX</h2>
+      <p class="lead">Especialistas em transporte intermunicipal e encomendas expressas no Pará. Levamos você e o que é importante para você com <strong>segurança garantida</strong>, <strong>conforto</strong> e <strong>agilidade</strong> — motoristas experientes e veículos revisados.</p>
+      <div class="badges" aria-label="Diferenciais">
+        <span class="badge">Motoristas experientes</span>
+        <span class="badge">Frota revisada</span>
+        <span class="badge">Atendimento humanizado</span>
+        <span class="badge">Compra facilitada</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Rotas ===================== -->
+  <section id="rotas" class="section white" aria-labelledby="rotas-title">
+    <div class="container reveal">
+      <h2 id="rotas-title">Rotas e Cidades Atendidas</h2>
+      <p class="lead">Operamos entre cidades do interior do Pará e Bahia. <br> Confira as cidades e encontre seu destino:</p>
+      <div class="cities" id="cities">
+        <!-- Cards de cidades Pará (com dados estruturados implícitos via lista) -->
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Canaã dos Carajás</strong><div class="meta">Saídas diárias</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Paragominas</strong><div class="meta">Conexões rápidas</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Redenção</strong><div class="meta">Confiança e pontualidade</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Marabá</strong><div class="meta">Alta frequência</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Tucuruí</strong><div class="meta">Conforto garantido</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Altamira</strong><div class="meta">Viagem segura</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Dom Eliseu</strong><div class="meta">Rota popular</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Xinguara</strong><div class="meta">Ótimo custo-benefício</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Parauapebas</strong><div class="meta">Atendimento ágil</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Rondon</strong><div class="meta">Conforto e segurança</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Conceição</strong><div class="meta">Opções flexíveis</div></div>
+        </article>
+      </div>
+       <div class="cities" id="cities">
+        <!-- Cards de cidades Bahia (com dados estruturados implícitos via lista) -->
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Salvador</strong><div class="meta">Saídas diárias</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Feira de Santana</strong><div class="meta">Conexões rápidas</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Itabuna</strong><div class="meta">Confiança e pontualidade</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Ilhéus</strong><div class="meta">Alta frequência</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Barreiras</strong><div class="meta">Conforto garantido</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Alagoinhas</strong><div class="meta">Viagem segura</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Jequié</strong><div class="meta">Rota popular</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Paulo Afonso</strong><div class="meta">Ótimo custo-benefício</div></div>
+        </article>
+        <article class="city-card" data-city>
+          <div class="city-icon" aria-hidden="true">🚌</div>
+          <div><strong>Juazeiro</strong><div class="meta">Atendimento ágil</div></div>
+        </article>
+      </div>
+      
+
+      <div style="margin-top:26px; font-weight:600; color:#b45309;">
+        <span id="urgency">Horário extra disponível hoje! Reserve sua passagem agora.</span>
+      </div>
+
+      <div class="schedules" aria-label="Horários Extras">
+        <article class="card">
+          <div class="media">
+            <img src="assets/extra-canaa-paragominas.jpg" alt="Horário extra Canaã dos Carajás para Paragominas às 20h" loading="lazy" width="1200" height="675" />
+            <span class="tag">Vagas limitadas</span>
+          </div>
+          <div class="body">
+            <h3>Canaã dos Carajás → Paragominas</h3>
+            <div class="meta">Saída: <strong>20:00</strong> • Hoje</div>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://wa.me/5591985031240?text=Quero%20reservar%20o%20hor%C3%A1rio%20extra%20Cana%C3%A3%20dos%20Caraj%C3%A1s%20%E2%86%92%20Paragominas%20%C3%A0s%2020h" target="_blank" rel="noopener">Reservar Agora</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="media">
+            <img src="assets/rota-generica-1.jpg" alt="Ônibus MP Viagens fazendo a rota Redenção para Marabá" loading="lazy" width="1200" height="675" />
+            <span class="tag">Novo</span>
+          </div>
+          <div class="body">
+            <h3>Redenção → Marabá</h3>
+            <div class="meta">Saída: 07:00</div>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://wa.me/5591985031240?text=Quero%20reservar%20Reden%C3%A7%C3%A3o%20%E2%86%92%20Marab%C3%A1%20%C3%A0s%2007h" target="_blank" rel="noopener">Reservar Agora</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="media">
+            <img src="assets/rota-generica-2.jpg" alt="Ônibus MP Viagens na rota Altamira para Tucuruí" loading="lazy" width="1200" height="675" />
+            <span class="tag">Promo</span>
+          </div>
+          <div class="body">
+            <h3>Altamira → Tucuruí</h3>
+            <div class="meta">Saída: 14:00</div>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://wa.me/5591985031240?text=Quero%20reservar%20Altamira%20%E2%86%92%20Tucuru%C3%AD%20%C3%A0s%2014h" target="_blank" rel="noopener">Reservar Agora</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Encomendas ===================== -->
+  <section id="encomendas" class="section" aria-labelledby="encomendas-title">
+    <div class="container reveal">
+      <h2 id="encomendas-title">Encomendas Expresso</h2>
+      <p class="lead">Envie cargas e encomendas com <strong>rapidez</strong>, <strong>rastreio fácil</strong> e <strong>atendimento personalizado</strong>. Segurança na coleta e entrega, com comunicação direta pelo WhatsApp.</p>
+      <div class="features">
+        <div class="feature">
+          <div class="icon" aria-hidden="true">⚡</div>
+          <h3>Rapidez na entrega</h3>
+          <p>Coleta e envio ágeis entre as cidades atendidas, otimizando prazos sem perder a segurança.</p>
+        </div>
+        <div class="feature">
+          <div class="icon" aria-hidden="true">📍</div>
+          <h3>Rastreio fácil</h3>
+          <p>Acompanhamento simples pelo WhatsApp e atualizações em cada etapa do trajeto.</p>
+        </div>
+        <div class="feature">
+          <div class="icon" aria-hidden="true">🤝</div>
+          <h3>Atendimento personalizado</h3>
+          <p>Equipe pronta para entender sua necessidade e indicar a melhor solução.</p>
+        </div>
+      </div>
+
+      <!-- FAQ SEO -->
+      <div class="faq" id="faq" aria-label="Perguntas frequentes">
+        <h3>Perguntas frequentes</h3>
+        <details>
+          <summary>Como reservar uma passagem?</summary>
+          <p>Clique em “Reservar Agora” no horário desejado ou fale direto no WhatsApp <a href="https://wa.me/5591985031240" target="_blank" rel="noopener">(91) 98503-1240</a>.</p>
+        </details>
+        <details>
+          <summary>Vocês fazem envio de encomendas no mesmo dia?</summary>
+          <p>Em rotas selecionadas, sim. Consulte disponibilidade e prazo pelo WhatsApp.</p>
+        </details>
+        <details>
+          <summary>Posso rastrear minha encomenda?</summary>
+          <p>Sim. Nosso time envia atualizações no WhatsApp durante o transporte.</p>
+        </details>
+        <details>
+          <summary>Quais cidades vocês atendem?</summary>
+          <p>Atendemos Canaã dos Carajás, Paragominas, Redenção, Marabá, Tucuruí, Altamira, Dom Eliseu, Xinguara, Parauapebas, Rondon e Conceição.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Depoimentos ===================== -->
+  <section class="section white" aria-labelledby="depoimentos-title">
+    <div class="container reveal">
+      <h2 id="depoimentos-title">Clientes satisfeitos</h2>
+      <p class="lead">Veja o que dizem nossos passageiros e clientes de encomendas expresso.</p>
+      <div class="testimonials">
+        <div class="quote">
+          <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+          “Viagem tranquila e pontual. Recomendo a MPEX para quem busca segurança!”
+          <div class="person">— Ana, Parauapebas</div>
+        </div>
+        <div class="quote">
+          <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+          “Enviei uma encomenda urgente e chegou no mesmo dia. Atendimento excelente!”
+          <div class="person">— Carlos, Marabá</div>
+        </div>
+        <div class="quote">
+          <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+          “Ótimo conforto e equipe atenciosa. Voltarei a viajar com a MPEX.”
+          <div class="person">— Juliana, Altamira</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA Final ===================== -->
+  <section class="section blue cta-final" aria-labelledby="cta-title">
+    <div class="container reveal">
+      <h2 id="cta-title">Precisa viajar ou enviar uma encomenda com segurança e rapidez?</h2>
+      <p>Clique no botão abaixo e fale com a nossa equipe no WhatsApp agora!</p>
+      <a class="btn btn-primary" href="https://wa.me/5591985031240?text=Ol%C3%A1%20MPEX!%20Quero%20falar%20com%20a%20equipe." target="_blank" rel="noopener">Quero Falar Agora</a>
+    </div>
+  </section>
+
+  <!-- ===================== Contato ===================== -->
+  <section id="contato" class="section" aria-labelledby="contato-title">
+    <div class="container reveal">
+      <h2 id="contato-title">Contato</h2>
+      <div class="contact">
+        <div class="panel" itemscope itemtype="https://schema.org/Organization">
+          <h3 itemprop="name">MP Viagens / MPEX</h3>
+          <div class="list">
+            <div>WhatsApp: <a itemprop="telephone" href="https://wa.me/5591985031240" target="_blank" rel="noopener">(91) 98503-1240</a></div>
+            <div>E-mail: <a itemprop="email" href="mailto:contato@mpex.com.br">contato@mpex.com.br</a></div>
+            <div>Atendimento: <time itemprop="openingHours" datetime="Mo-Sa 08:00-18:00">Segunda a Sábado</time></div>
+          </div>
+          <div style="margin-top:14px;">
+            <a class="btn btn-primary" href="https://wa.me/5591985031240?text=Ol%C3%A1%20MPEX!%20Preciso%20de%20ajuda%20com%20passagens%20ou%20encomendas." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Onde atuamos</h3>
+          <p>Interior do Pará, com foco em rotas entre: Canaã dos Carajás, Paragominas, Redenção, Marabá, Tucuruí, Altamira, Dom Eliseu, Xinguara, Parauapebas, Rondon e Conceição.</p>
+          <p>Consulte disponibilidade e horários no WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Footer ===================== -->
+  <footer role="contentinfo">
+    <div class="container footer-grid">
+      <div>© <span id="year"></span> MP Viagens / MPEX. Todos os direitos reservados.</div>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="#" target="_blank" rel="noopener">Termos de Uso</a>
+        <a href="#" target="_blank" rel="noopener">Política de Privacidade</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ===================== JSON-LD / SEO ===================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "MP Viagens / MPEX",
+        "url": "https://www.seudominio.com.br/",
+        "telephone": "+55-91-98503-1240",
+        "logo": "https://www.seudominio.com.br/assets/logo-mpex.png",
+        "areaServed": {"@type": "AdministrativeArea", "name": "Pará"},
+        "sameAs": []
+      },
+      {
+        "@type": "WebSite",
+        "name": "MP Viagens / MPEX",
+        "url": "https://www.seudominio.com.br/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://wa.me/5591985031240?text={query}",
+          "query-input": "required name=query"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Transporte de passageiros intermunicipal",
+        "serviceType": "Transporte de passageiros",
+        "provider": {"@type": "Organization", "name": "MP Viagens / MPEX"},
+        "areaServed": ["Canaã dos Carajás","Paragominas","Redenção","Marabá","Tucuruí","Altamira","Dom Eliseu","Xinguara","Parauapebas","Rondon","Conceição"],
+        "availableChannel": {"@type": "ServiceChannel", "serviceUrl": "https://wa.me/5591985031240"}
+      },
+      {
+        "@type": "CourierService",
+        "name": "Encomendas expressas",
+        "provider": {"@type": "Organization", "name": "MP Viagens / MPEX"},
+        "areaServed": "Pará",
+        "availableChannel": {"@type": "ServiceChannel", "serviceUrl": "https://wa.me/5591985031240"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.seudominio.com.br/#inicio"},
+          {"@type": "ListItem", "position": 2, "name": "Rotas e Horários", "item": "https://www.seudominio.com.br/#rotas"},
+          {"@type": "ListItem", "position": 3, "name": "Encomendas", "item": "https://www.seudominio.com.br/#encomendas"},
+          {"@type": "ListItem", "position": 4, "name": "Contato", "item": "https://www.seudominio.com.br/#contato"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "Como reservar uma passagem?", "acceptedAnswer": {"@type": "Answer", "text": "Clique em 'Reservar Agora' no horário desejado ou fale direto no WhatsApp (91) 98503-1240."}},
+          {"@type": "Question", "name": "Vocês fazem envio de encomendas no mesmo dia?", "acceptedAnswer": {"@type": "Answer", "text": "Em rotas selecionadas, sim. Consulte disponibilidade e prazo pelo WhatsApp."}},
+          {"@type": "Question", "name": "Posso rastrear minha encomenda?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Nosso time envia atualizações no WhatsApp durante o transporte."}},
+          {"@type": "Question", "name": "Quais cidades vocês atendem?", "acceptedAnswer": {"@type": "Answer", "text": "Atendemos Canaã dos Carajás, Paragominas, Redenção, Marabá, Tucuruí, Altamira, Dom Eliseu, Xinguara, Parauapebas, Rondon e Conceição."}}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- ===================== Scripts (efeitos e utilidades) ===================== -->
+  <script>
+    // Menu mobile acessível
+    const btnMenu = document.getElementById('btnMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+    btnMenu.addEventListener('click', () => {
+      const open = mobileMenu.style.display === 'flex';
+      mobileMenu.style.display = open ? 'none' : 'flex';
+      mobileMenu.setAttribute('aria-hidden', open);
+    });
+
+    // Ano no rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Autoridade -> conta cidades automaticamente
+    const cityCount = document.querySelectorAll('[data-city]').length;
+    document.getElementById('cityCount').textContent = `Mais de ${cityCount} cidades`;
+
+    // Urgência
+    const dd = new Date();
+    const fmt = dd.toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: 'long' });
+    const urgency = document.getElementById('urgency');
+    if (urgency) urgency.textContent = `Horário extra disponível hoje (${fmt})! Reserve sua passagem agora.`;
+
+    // Reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Fecha menu mobile ao navegar
+    document.querySelectorAll('#mobileMenu a').forEach(a => a.addEventListener('click', () => {
+      mobileMenu.style.display = 'none';
+      mobileMenu.setAttribute('aria-hidden', true);
+    }));
+  </script>
+</body>
+</html>
