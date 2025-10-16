@@ -83,12 +83,22 @@ header {
 .menu a:hover {
     opacity: 1;
 }
+.cta-button {
+    display: flex;
+    gap: 10px;
+}
 
+.cta-button a {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-items: center;
+}
 .cta-whats {
     background: #25D366;
     color: #ffffff;
     padding: 10px 16px;
-    border-radius: 999px;
+    border-radius: 15px;
     font-weight: 600;
     display: inline-flex;
     align-items: center;
@@ -120,6 +130,14 @@ header {
     padding: 8px 0;
     border-bottom: 1px dashed rgba(10, 42, 110, .15);
 }
+
+.mobile-menu .cta-whats {
+    align-self: center;
+    padding: 10px 100px; /* Aumenta o tamanho do botão */
+    margin-top: 20px;   /* Adiciona um espaço acima */
+}
+
+
 
 /* ===================== Hero ===================== */
 .hero {
@@ -316,7 +334,7 @@ header {
     right: 10px;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 1094px) {
     .menu {
         display: none;
     }
@@ -342,6 +360,10 @@ header {
     box-shadow: 0 14px 28px rgba(0, 0, 0, .08);
     display: flex;
     flex-direction: column;
+}
+
+.card img {
+    border-radius: 16px 16px 0 0;
 }
 
 .card .media {
